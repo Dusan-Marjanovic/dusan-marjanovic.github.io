@@ -53,11 +53,11 @@ app.component("life-counter", {
   props: ["start"],
   template: `
         <div class="life-counter">
-        <input class="life-button" type="button" value="-5" @click="lifeDown(5)" />
-        <input class="life-button" type="button" value="-1" @click="lifeDown(1)"/>
+        <input class="life-button life5" type="button" value="-5" @click="lifeDown(5)" />
+        <input class="life-button life1" type="button" value="-1" @click="lifeDown(1)"/>
         <p class="life-amount">{{counter}}</p>
-        <input class="life-button" type="button" value="+1" @click="lifeUp(1)"/>
-        <input class="life-button" type="button" value="+5" @click="lifeUp(5)"/>
+        <input class="life-button life1" type="button" value="+1" @click="lifeUp(1)"/>
+        <input class="life-button life5" type="button" value="+5" @click="lifeUp(5)"/>
         </div>`,
 });
 

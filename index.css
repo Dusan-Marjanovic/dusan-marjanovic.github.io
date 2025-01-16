@@ -65,21 +65,23 @@ html {
   scale: 1.1;
 }
 .life-button {
-  padding: 1rem;
+  padding: 1rem 1.3rem;
   font-weight: bold;
   font-size: 1.8rem;
   color: black;
-  margin: auto 0.1rem;
-  border: solid 3px rgb(0, 0, 0);
-  border-radius: 0.7rem;
-  background-color: rgb(250, 199, 91);
-
+  margin: auto;
+  border: none;
   backdrop-filter: blur(2px);
-  transition: 0.1s;
+  transition: 0.1s ease-out;
+}
+.life1 {
+  background-color: rgb(211, 211, 211);
+}
+.life5 {
+  background-color: rgb(223, 223, 223);
 }
 .life-button:active {
-  background-color: rgba(240, 248, 255, 0);
-  color: rgb(250, 199, 91);
+  background-color: rgba(207, 207, 207, 0.801);
   transform: scale(0.9);
 }
 
