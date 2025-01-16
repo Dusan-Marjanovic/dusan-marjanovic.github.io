@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+}
+html {
+  position: fixed;
+  background-color: #2a2a2a;
+  scale: 0.8;
+  top: -2rem;
+}
+
+#app {
+  display: grid;
+  grid-template-areas:
+    "player1 player2"
+    "player3 player4";
+  grid-template-columns: 50vw;
+  grid-template-rows: 50vh;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.player-section {
+  background-color: #2a2a2a;
+  height: 50vh;
+  width: 50vw;
+  align-content: center;
+}
+
+.avatar-input {
+  width: 70%;
+  margin: 0.5rem 15% 0.5rem 15%;
+  z-index: 4;
+  position: fixed;
+  scale: 1.3;
+}
+
+.img-1 > img {
+  transform: translateX(1.4rem) translateY(1.5rem) rotate(50deg);
+}
+.img-2 > img {
+  transform: translateX(1rem) translateY(1.3rem) rotate(-50deg);
+}
+
+.img-1 > .life-counter {
+  transform: translateY(-1rem) rotate(10deg);
+}
+.img-2 > .life-counter {
+  transform: translateY(-1rem) rotate(-10deg);
+}
+
+.avatar-img {
+  object-fit: cover;
+  margin: auto;
+  width: 10vh;
+  height: 25vw;
+  scale: 2.6;
+  z-index: 1;
+}
+
+.life-counter {
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+  transform: translateY(-1rem);
+}
+.life-button {
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: white;
+  margin: auto 0.1rem;
+  border: solid 2px rgb(0, 0, 0);
+  border-radius: 0.3rem;
+  background-color: rgba(59, 59, 59, 0.692);
+  backdrop-filter: blur(2px);
+}
+.life-amount {
+  padding: 1rem;
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 10px #000000, 0 0 10px #000000;
+}
+
+.player-left {
+  margin: auto;
+  transform: rotate(90deg);
+  transform-origin: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.player-right {
+  margin: auto;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  display: flex;
+  flex-direction: column;
+}

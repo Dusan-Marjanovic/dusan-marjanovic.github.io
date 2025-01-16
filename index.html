@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Life Counter</title>
+  </head>
+  <body id="app">
+    <div class="player-section">
+      <div class="player-left img-1">
+        <create-avatar></create-avatar>
+        <life-counter :start="40"></life-counter>
+      </div>
+    </div>
+    <div class="player-section">
+      <div class="player-right img-2">
+        <create-avatar></create-avatar>
+        <life-counter :start="40"></life-counter>
+      </div>
+    </div>
+    <div class="player-section">
+      <div class="player-left img-2 player-down">
+        <create-avatar></create-avatar>
+        <life-counter :start="40"></life-counter>
+      </div>
+    </div>
+    <div class="player-section">
+      <div class="player-right img-1 player-down">
+        <create-avatar></create-avatar>
+        <life-counter :start="40"></life-counter>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
