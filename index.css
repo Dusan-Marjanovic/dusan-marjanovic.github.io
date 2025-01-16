@@ -3,8 +3,9 @@
 }
 html {
   position: fixed;
-  background-color: #2a2a2a;
-  scale: 0.8;
+  background-image: url(https://belartestudio.com/cdn/shop/products/NordicStructure-Wood-BAS00410082-DarkPineWood-10_67c924d5-f1c7-4b5b-8d3f-36eef985d199.jpg);
+  background-size: cover;
+  scale: 0.63;
 }
 
 #app {
@@ -19,7 +20,6 @@ html {
 }
 
 .player-section {
-  background-color: #2a2a2a;
   height: 50vh;
   width: 50vw;
   align-content: center;
@@ -33,18 +33,18 @@ html {
   scale: 1.3;
 }
 
-.avatar-section > img {
-  transform: translateX(1.4rem) translateY(1.5rem) rotate(50deg);
+.img-1 > .avatar-section > img {
+  transform: translateX(-5rem) translateY(3rem) rotate(-10deg);
 }
-.avatar-section > img {
-  transform: translateX(1rem) translateY(1.3rem) rotate(-50deg);
+.img-2 > .avatar-section > img {
+  transform: translateX(8rem) translateY(3rem) rotate(10deg);
 }
 
 .img-1 > .life-counter {
-  transform: translateY(-1rem) rotate(10deg);
+  transform: translateX(-1rem) translateY(1rem) /* rotate(10deg) */;
 }
 .img-2 > .life-counter {
-  transform: translateY(-1rem) rotate(-10deg);
+  transform: translateX(1rem) translateY(1rem) /* rotate(-10deg) */;
 }
 
 .avatar-img {
@@ -54,6 +54,7 @@ html {
   height: 25vw;
   scale: 2.6;
   z-index: 1;
+  border-radius: 0.3rem;
 }
 
 .life-counter {
@@ -72,10 +73,17 @@ html {
   border-radius: 0.3rem;
   background-color: rgba(59, 59, 59, 0.692);
   backdrop-filter: blur(2px);
+  transition: 0.1s;
 }
+.life-button:active {
+  background-color: rgba(240, 248, 255, 0.192);
+  color: white;
+  transform: scale(0.9);
+}
+
 .life-amount {
   padding: 1rem;
-  font-size: 3rem;
+  font-size: 4rem;
   color: white;
   font-weight: bold;
   text-shadow: 0 0 10px #000000, 0 0 10px #000000;
