@@ -30,21 +30,21 @@ html {
   margin: 0.5rem 15% 0.5rem 15%;
   z-index: 4;
   position: fixed;
-  scale: 1.3;
+  scale: 2;
 }
 
 .img-1 > .avatar-section > img {
-  transform: translateX(-5rem) translateY(3rem) rotate(-10deg);
+  transform: translateX(3rem) translateY(3rem) rotate(8deg);
 }
 .img-2 > .avatar-section > img {
-  transform: translateX(8rem) translateY(3rem) rotate(10deg);
+  transform: translateX(0rem) translateY(2rem) rotate(-14deg);
 }
 
 .img-1 > .life-counter {
-  transform: translateX(-1rem) translateY(1rem) /* rotate(10deg) */;
+  transform: translateX(-9.5rem) translateY(1rem) rotate(2deg);
 }
 .img-2 > .life-counter {
-  transform: translateX(1rem) translateY(1rem) /* rotate(-10deg) */;
+  transform: translateX(10rem) translateY(1rem) rotate(-3deg);
 }
 
 .avatar-img {
@@ -62,22 +62,24 @@ html {
   justify-content: center;
   z-index: 3;
   transform: translateY(-1rem);
+  scale: 1.1;
 }
 .life-button {
   padding: 1rem;
   font-weight: bold;
-  font-size: 1.3rem;
-  color: white;
+  font-size: 1.8rem;
+  color: black;
   margin: auto 0.1rem;
-  border: solid 2px rgb(0, 0, 0);
-  border-radius: 0.3rem;
-  background-color: rgba(59, 59, 59, 0.692);
+  border: solid 3px rgb(0, 0, 0);
+  border-radius: 0.7rem;
+  background-color: rgb(250, 199, 91);
+
   backdrop-filter: blur(2px);
   transition: 0.1s;
 }
 .life-button:active {
-  background-color: rgba(240, 248, 255, 0.192);
-  color: white;
+  background-color: rgba(240, 248, 255, 0);
+  color: rgb(250, 199, 91);
   transform: scale(0.9);
 }
 
